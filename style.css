@@ -1,0 +1,59 @@
+*
+{
+    background-color: #DCDCDC;
+}
+
+body {
+    font-family: Georgia, serif;
+    font-size: 15px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+    margin-bottom: 40px;
+
+}
+
+#button {
+    background: grey;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    color: white;
+    font-size: 16px;
+    transition-duration: .5s;
+    margin-top: 15px;
+}
+
+
+#button:hover {
+    background: red;
+    color: black;
+    cursor: pointer;
+
+}
+
+#after_submit {
+    text-align: center;
+    margin-top: 30px;
+    visibility: hidden;
+    font-size: 30px;
+
+}
+
+#picture {
+    width: 375px;
+    height: 245px;
+    border-radius: 50%;
+}
+
+
+
