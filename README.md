@@ -20,5 +20,5 @@ My approach was as follows:
   
 Contributions:
 
-I the time to not restart once it runs out. I'd like it close the quiz. 
+I would like the timer to not restart once it runs out. I'd like it close the quiz. 
   
