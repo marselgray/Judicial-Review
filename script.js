@@ -1,4 +1,6 @@
 
+/* function to checks answers */ 
+
 function check_answers(){
 
 	var question1 = document.quiz.question1.value;
@@ -48,7 +50,7 @@ function check_answers(){
 	}
 	
 	var pictures = ["images/rgb.jpg", "images/scalia.jpg", 'images/Gorsuch.jpg', "images/roberts.jpg"];
-	var messages = ["RBG is pleased", "Scalia is disappointed", "Gorsuch laughs at your studipity", "Roberts wonders what is wrong with you"];
+	var messages = ["Notorious RBG is pleased", "Scalia is disappointed", "Gorsuch laughs at your lack of knowledge", "Roberts wonders what is wrong with you"];
 	var score;
 
 	
@@ -67,12 +69,45 @@ function check_answers(){
 		score = 3;
 	}
 
+/*	displays the content */
+
 	document.getElementById("after_submit").style.visibility = "visible";
 	document.getElementById("message").innerHTML = messages[score];
 	document.getElementById("number_correct").innerHTML = "You got " + correct + " correct.";
 	document.getElementById("picture").src = pictures[score];
 	
 	}
+
+
+/* five minute timer begins on load */
+
+window.onload = function () {
+    var fiveMinutes = 60 * 5,
+        display = document.querySelector('#time');
+    startTimer(fiveMinutes, display);
+}
+
+
+function startTimer(duration, display) {
+    var timer = duration, minutes, seconds;
+    setInterval(function () {
+        minutes = parseInt(timer / 60, 10)
+        seconds = parseInt(timer % 60, 10);
+
+        minutes = minutes < 10 ? "0" + minutes : minutes;
+        seconds = seconds < 10 ? "0" + seconds : seconds;
+
+        display.textContent = minutes + ":" + seconds;
+
+        if (--timer < 0) {
+            timer = duration;
+        }
+    }, 1000);
+};
+
+
+
+
 
 
 
