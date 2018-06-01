@@ -1,7 +1,10 @@
 # ga-project1
 
 
+Description:
 This is a simple trivia game testing your knowledge of famouse landmark Supreme Court cases.
+
+
 
 Technologies used were as follows:
 
