@@ -18,3 +18,7 @@ My approach was as follows:
   4. I wanted a timer to make my game special so I developed a function to call a timer on load
   
   
+Contributions:
+
+I the time to not restart once it runs out. I'd like it close the quiz. 
+  
