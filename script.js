@@ -82,13 +82,13 @@ function check_answers(){
 /* five minute timer begins on load */
 
 window.onload = function () {
-    var fiveMinutes = 60 * 5,
+    var fiveminutes = 60 * 5,
         display = document.querySelector('#time');
-    startTimer(fiveMinutes, display);
+    BeginTime (fiveminutes, display);
 }
 
 
-function startTimer(duration, display) {
+function BeginTime (duration, display) {
     var timer = duration, minutes, seconds;
     setInterval(function () {
         minutes = parseInt(timer / 60, 10)
