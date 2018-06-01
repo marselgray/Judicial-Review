@@ -4,6 +4,7 @@
 This is a simple trivia game testing your knowledge of famouse landmark Supreme Court cases.
 
 Technologies uses were as follows:
+
 This game uses various HTML, CSS, and JavaScript elements to test a user and 
 then render a number correct with an image of various Supreme Court justices. 
 
