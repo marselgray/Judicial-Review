@@ -7,95 +7,47 @@
     <meta charset="UTF-8">
     <title>Judicial Review</title>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
   </head>
-<body>
-  <header>
-    <h1>Judicial Review</h1>
-    <img src='images/CourtBuilding.jpg' alt='supreme court'>
+ 
+ <body>
+ 
 
-    <h2> A Game Where You Can Test Your Knowledge of Supreme Court Rulings <br> and Legal Concepts Found in the US Constitution</h2>
+<div class="wrapper">
+  <div class="box a"><h1>Welcome to Judicial Review</h1> <br> <i>A Quiz that Tests Your Knowledge of Landmark Supreme Court Rulings</i></div>
 
- <!--    Timer is here -->
+  <div class="box b"><button onclick="catAndQuest()" id="start"><h3> Begin</h3> </button>
 
-  <div>Quiz Ends In <span id="time">05:00</span> minutes!</div>
+  <div id="winner" style="display:none;">YOU WIN! <br>Congrats, smartypants!</div>
+<div id="looser" style="display:none;">Sorry, no more questions.<br> You loose!</div>
+<button onclick="restart()" style="display:none;" id="reset"> PLAY AGAIN? </button> 
 
-  </header>
+<div id="questions">
+  <div id="count"></div>
+  <div id="category"></span> </div>
+  <div id="quest"> </div> </div>
+
+
+
+</div>
   
+  <div class="box c"><h2>Quiz Ends In <span id="time">05:00</span> minutes!</h2></div>
 
-<!-- Quiz Questions  -->
-
-<form id = "quiz" name = "quiz">
-
-
-<p class = "questions">In District of Columbia v. Heller, the Supreme Court ruled that an individual has the right to protect oneself, that such freedoms granted in the Second Amendment include freedom to protect one’s own life and that the DC’s ban on handguns was unconstitutional. </p>
-<input type ="radio" name = "question1" value = "true"> True <br>
-<input type ="radio" name = "question1" value = "false"> False<br>
-
-<p class = "questions">The Power of Judicial Review is actually not mentioned in Article 3 of the US Constitution. In Marbury v. Madison the Supreme Court declared that the power of “judicial review” to be a power of the Supreme Court. </p>
-<input type = "radio" name = "question2" value = "true"> True<br>
-<input type = "radio" name = "question2" value = "false"> False<br>
-<p class = "questions">In Roe v. Wade, the Supreme Court ruled on the matter of medical privacy citing that a person’s medical records were subject to protection under the 4th Amendment and that the State has no claim to citizen's personal medical record or treatment. </p>
-
-<input type = "radio" name = "question3" value = "true"> True<br>
-<input type = "radio" name = "question3" value = "false"> False<br>
-
-<p class = "questions">In both Obergefell v. Hodges and Loving v. Virginia, the Supreme Court ruled that states must honor citizens' civil rights protected by the 14th Amendment’s “equal protection under the Law” clause. </p>
-
-<input type = "radio" name = "question4" value = "true"> True<br>
-<input type = "radio" name = "question4" value = "false"> False<br>
-
-<p class = "questions">In United States v. Wong Kim Ark, the decision came down to one word (jurisdiction
-in the 14th Amendment) citing that because he had been born in land under jurisdiction of the United States he was allowed citizenship of the US. 
-</p>
-
-<input type = "radio" name = "question5" value = "true"> True<br>
-<input type = "radio" name = "question5" value = "false"> False<br>
-
-<p class = "questions">In New York Times Co. v. Sullivan, the Supreme Court declared that a media company can be held for libel if it 1) publishes false defamatory statements knowing that 2) such statements would cause harm and that 3) the burden of proof rested on the individual harmed.</p>
-
-<input type = "radio" name = "question6" value = "true"> True<br>
-<input type = "radio"  name = "question6" value = "false"> False<br>
-
-<p class = "questions"> In National Federation of Independent Business v. Sebelius, the Supreme Court ruled that because Congress had exercised the "Commerce Clause" of Article 1 in crafting the individual mandate to purchase health insurance, it was in fact constitutional. </p>
-
-<input type = "radio" name = "question7" value = "true"> True<br>
-<input type = "radio" name = "question7" value = "false"> False<br>
+  <div class="box d">
 
 
-<p class = "questions"> Citizens United v. Federal Election Commission dealt with the topic of political financing. The Supreme Court ruled that because political spending is a type of free speech protected under the First Amendment, businesses should not be limited to how much they want to spend on political financing</p>
+    <div class="box e" id="points"></div>
 
-<input type = "radio" name = "question8" value = "true"> True<br>
-<input type = "radio" name = "question8" value = "false"> False<br>
+    <div class="box f"><button onclick="answer(true)" style="display:none;" id="answerT"> TRUE</button></div>
 
-<p class = "questions"> In Texas v. White, the Supreme Court ruled that Texas (and the rest of the Confederacy) never actually left the Union during the Civil War and instead where under military rule. Because a state cannot unilaterally secede from the United States such actions are considered legally "null" and that for a state to actually secede from the "indestructible Union, composed of indestructible States" it must have the consent of all other states.</p>
+    <div class="box g"><button onclick="answer(false)" style="display:none;" id="answerF"> FALSE</button></div>
+  
+  </div>
 
-<input type = "radio" name = "question9" value = "true"> True<br>
-<input type = "radio" name = "question9" value = "false"> False<br>
-
-<p class = "questions"> In Miranda v. Arizona, the Supreme Court ruled that the Fifth Amendment right against self-incrimination requires law enforcement officials to advise a suspect interrogated in custody of his or her rights to remain silent and to obtain an attorney.</p>
-
-<input type = "radio"  name = "question10" value = "true"> True<br>
-<input type = "radio" name = "question10" value = "false"> False<br>
-
-
-<!-- Submit fuction is called here and displays are hidden till clicked  -->
-
-
-<input id = "button" type = "button" value = "I'm finished!" onclick = "check_answers();">
-
-
-</form>
-
-<div id = "after_submit">
-<p id = "number_correct"></p>
-
-<img src = 'sc' id = "picture" alt='supreme court'>
-<p id = "message"></p>
 </div>
 
 </body>
-
+<script src="script.js"></script>
 </html>
  
 

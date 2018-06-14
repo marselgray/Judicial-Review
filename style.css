@@ -1,65 +1,157 @@
-*
-{
- /*   background-color: #DCDCDC;*/
+
+* {
+    color: white;
+    text-align: center;
+    font-family: 'Amiri', serif;
 }
 
 body {
-    font-family: "Roboto Mono", Roboto, sans-serif;
-    font-size: 15px;
+  margin: 90px; 
 }
 
-h1,h2 {
-    text-align: center;
-    margin-bottom: 30px;
+.wrapper {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(4, [col] 250px ) ;
+    grid-template-rows: repeat(2, [row] auto  );
+    /*color: #444;*/
 }
 
-img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 30%;
-    margin-bottom: 40px;
+    .box {
+        border-radius: 5px;
+        padding: 20px;
+        font-size: 150%;
+    }
 
-}
+    h1, i {
+        background-color: #11365A;
+    }
 
-#button {
-    background: grey;
+    .a {
+        grid-column: col / span 2;
+        grid-row: row;
+        background-color: #11365A;
+    }
+
+    .b {
+        grid-column: col 3 / span 2;
+        grid-row: row;
+        background-color: #27BCC2;
+    }
+
+    h2, span {
+        background-color: #D62332;
+    }
+
+    .c {
+        grid-column: col / span 2;
+        grid-row: row 2;
+       background-color: #D62332;
+        color: white;
+    }
+
+    .d{
+        grid-column: col 3 / span 2;
+        grid-row: row 2;
+        display: grid;
+        grid-gap: 10px;
+        grid-template-columns: 1fr 1fr;
+        background-color: #A2CEEF;
+    }
+
+    .e {
+        grid-column: 1 / 3;
+        grid-row: 1;
+         background-color: #F8D200;
+    }
+
+    .f {
+        grid-column: 1;
+        grid-row: 2;
+         background-color: #F8D200;
+    }
+
+    .g {
+        grid-column: 2;
+        grid-row: 2;
+         background-color: #F8D200;
+    }
+
+    #start {
+    background-color: #27BCC2;
     border: none;
-    border-radius: 5px;
-    padding: 10px;
-    color: white;
-    font-size: 16px;
-    transition-duration: .5s;
-    margin-top: 15px;
+    font-size: 60px;
+    color: #FFFFFF;
+    text-align: center;
+    -webkit-transition-duration: 1s; /* Safari */
+    transition-duration: 1s;
+    overflow: hidden;
+    cursor: pointer;
+    -webkit-animation-name: changecolour;  Safari 4.0 - 8.0 
+    -webkit-animation-duration: 1.5s; /* Safari 4.0 - 8.0 */
+     -webkit-animation-iteration-count: infinite; /* Safari 4.0 - 8.0 */
+    animation-name: changecolour;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
 }
 
-
-#button:hover {
-    background: red;
-    color: black;
+#answerT {
+    padding: 20px;
+    background-color: #F8D200;
+    border: none;
+    font-size: 20px;
+    color: #FFFFFF;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    text-decoration: none;
+    overflow: hidden;
     cursor: pointer;
 
 }
+#answerF {
+   padding: 20px;
+    background-color: #F8D200;
+    border: none;
+    font-size: 20px;
+    color: #FFFFFF;
+    -webkit-transition-duration: 0.4s; 
+    transition-duration: 0.4s;
+    text-decoration: none;
+    overflow: hidden;
+    cursor: pointer;
+}
 
-#after_submit {
+
+#winner{
     text-align: center;
-    margin-top: 30px;
-    visibility: hidden;
+    font-size: 45px;
+    padding-bottom: 10px;
+}
+
+#looser{
+    text-align: center;
+    font-size: 45px;
+    padding-bottom: 10px;
+}
+
+#reset{
+    background-color: #27BCC2;
+    border: none;
     font-size: 30px;
-
+    color: #FFFFFF;
+    padding: 20px;
+    width: 200px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    overflow: hidden;
+    cursor: pointer;
+     -webkit-animation-name: changecolour; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 1.5s; /* Safari 4.0 - 8.0 */
+     -webkit-animation-iteration-count: infinite; /* Safari 4.0 - 8.0 */
+    animation-name: changecolour;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    margin-left: 40%;
+    margin-top:5%;
+    
 }
-
-#picture {
-    width: 375px;
-    height: 245px;
-    border-radius: 50%;
-}
-
-
-div {
-    text-align: center;
-    font-size: 24px;
-    color: red;
-}
-
-
