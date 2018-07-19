@@ -1,10 +1,9 @@
-# ga-project1
+# Judicial Review 
 
 
 Description:
 This is a simple trivia game testing your knowledge of famouse landmark Supreme Court cases.
 
-![screen shot 2018-06-01 at 9 49 01 am](https://user-images.githubusercontent.com/37955946/40844646-7ef56716-6582-11e8-9c50-ebe8df5d9f85.png)
 
 
 
